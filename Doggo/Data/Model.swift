@@ -35,6 +35,7 @@ struct Weight: Codable {
 
 @Model
 class Doggo {
+    var adopted: Date
     var url: String
     var name: String
     var temperament: String
@@ -45,6 +46,7 @@ class Doggo {
     var weightImperial: String
     
     init(dog: Dog) {
+        self.adopted = .now
         self.url = dog.url
         self.name = dog.name
         self.temperament = dog.temperament

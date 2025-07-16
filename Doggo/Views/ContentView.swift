@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(Observe.self) var observable
     var body: some View {
         TabView {
             Tab("My Dogs", systemImage: "dog.fill") {
-                Text("Doogs")
+                Dogs()
             }
             
             Tab("Find A Dog", systemImage: "archivebox.fill") {
-                Text("Random")
+                Random()
             }
             
             Tab("Settings", systemImage: "gear") {
-                Text("Settings")
+                Settings(observe: observable)
             }
         }
     }
