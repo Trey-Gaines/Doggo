@@ -16,7 +16,7 @@ struct ContentView: View {
             }
             
             Tab("Find A Dog", systemImage: "archivebox.fill") {
-                Random()
+                Random(observe: observable)
             }
             
             Tab("Settings", systemImage: "gear") {
