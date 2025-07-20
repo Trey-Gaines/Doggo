@@ -11,11 +11,11 @@ struct ContentView: View {
     @Environment(Observe.self) var observable
     var body: some View {
         TabView {
-            Tab("My Dogs", systemImage: "dog.fill") {
-                Dogs()
+            Tab("My Cats", systemImage: "cat.fill") {
+                Cats()
             }
             
-            Tab("Find A Dog", systemImage: "archivebox.fill") {
+            Tab("Find A Cat", systemImage: "archivebox.fill") {
                 Random(observe: observable)
             }
             
@@ -28,4 +28,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(Observe())
 }

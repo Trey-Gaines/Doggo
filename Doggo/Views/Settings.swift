@@ -10,7 +10,7 @@ import SwiftData
 struct Settings: View {
     @Bindable var observe: Observe
     @Environment(\.modelContext) var modelContext
-    @Query(sort: \Doggo.adopted) var dogs: [Doggo]
+    @Query(sort: \Cat.adopted) var cats: [Cat]
     
     var body: some View {
         NavigationStack {
@@ -26,14 +26,14 @@ struct Settings: View {
                 Section(header: Text("Data")) {
                     Button(role: .destructive) {
                         do {
-                            try modelContext.delete(model: Doggo.self)
+                            try modelContext.delete(model: Cat.self)
                         } catch { print("Failed to clear all adoptions: \(error)") }
                     } label: {
                         HStack {
                             Image(systemName: "trash")
-                            Text("Release All Dogs Adopted")
+                            Text("Release All Adopted Cats")
                         }
-                    }.disabled(dogs.count > 1)
+                    }.disabled(cats.count < 1)
                 }
             }
             
@@ -45,7 +45,7 @@ struct Settings: View {
 
 #Preview {
     Settings(observe: Observe())
-        .modelContainer(for: Doggo.self, inMemory: true)
+        .modelContainer(for: Cat.self, inMemory: true)
 }
 
 

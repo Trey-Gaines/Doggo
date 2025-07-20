@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2D5AEE7F2E2CF3C600CF634E /* Sim1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7C2E2CF3C600CF634E /* Sim1.png */; };
+		2D5AEE802E2CF3C600CF634E /* Sim2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7D2E2CF3C600CF634E /* Sim2.png */; };
+		2D5AEE812E2CF3C600CF634E /* Sim3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7E2E2CF3C600CF634E /* Sim3.png */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2D6A29082E26BDA700EC9B67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D5AEE7C2E2CF3C600CF634E /* Sim1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim1.png; sourceTree = "<group>"; };
+		2D5AEE7D2E2CF3C600CF634E /* Sim2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim2.png; sourceTree = "<group>"; };
+		2D5AEE7E2E2CF3C600CF634E /* Sim3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim3.png; sourceTree = "<group>"; };
 		2D6A28F92E26BDA600EC9B67 /* Doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6A29072E26BDA700EC9B67 /* DoggoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6A29112E26BDA700EC9B67 /* DoggoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,11 +42,6 @@
 		2D6A28FB2E26BDA600EC9B67 /* Doggo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Doggo;
-			sourceTree = "<group>";
-		};
-		2D6A290A2E26BDA700EC9B67 /* DoggoTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DoggoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -71,8 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				2D6A28FB2E26BDA600EC9B67 /* Doggo */,
-				2D6A290A2E26BDA700EC9B67 /* DoggoTests */,
 				2D6A28FA2E26BDA600EC9B67 /* Products */,
+				2D5AEE7C2E2CF3C600CF634E /* Sim1.png */,
+				2D5AEE7D2E2CF3C600CF634E /* Sim2.png */,
+				2D5AEE7E2E2CF3C600CF634E /* Sim3.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +129,6 @@
 			);
 			dependencies = (
 				2D6A29092E26BDA700EC9B67 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				2D6A290A2E26BDA700EC9B67 /* DoggoTests */,
 			);
 			name = DoggoTests;
 			packageProductDependencies = (
@@ -203,6 +206,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5AEE7F2E2CF3C600CF634E /* Sim1.png in Resources */,
+				2D5AEE802E2CF3C600CF634E /* Sim2.png in Resources */,
+				2D5AEE812E2CF3C600CF634E /* Sim3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +404,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
@@ -438,7 +444,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;

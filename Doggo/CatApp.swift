@@ -9,11 +9,11 @@ import SwiftUI
 import SwiftData
 
 @main
-struct DoggoApp: App {
+struct CatApp: App {
     @State var observe = Observe()
     var sharedModelContainer: ModelContainer = {
             let schema = Schema([
-                Doggo.self
+                Cat.self
             ])
             let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
