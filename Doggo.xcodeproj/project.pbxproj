@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4FA7822E2FF877000C4176 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2D4FA7812E2FF877000C4176 /* FirebaseAuthCombine-Community */; };
 		2D5AEE7F2E2CF3C600CF634E /* Sim1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7C2E2CF3C600CF634E /* Sim1.png */; };
 		2D5AEE802E2CF3C600CF634E /* Sim2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7D2E2CF3C600CF634E /* Sim2.png */; };
 		2D5AEE812E2CF3C600CF634E /* Sim3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7E2E2CF3C600CF634E /* Sim3.png */; };
@@ -63,6 +64,7 @@
 				2D5AEF262E2EE52200CF634E /* FirebaseDatabase in Frameworks */,
 				2D5AEF242E2EE52200CF634E /* FirebaseCore in Frameworks */,
 				2D5AEF222E2EE52200CF634E /* FirebaseAuth in Frameworks */,
+				2D4FA7822E2FF877000C4176 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +132,7 @@
 				2D5AEF212E2EE52200CF634E /* FirebaseAuth */,
 				2D5AEF232E2EE52200CF634E /* FirebaseCore */,
 				2D5AEF252E2EE52200CF634E /* FirebaseDatabase */,
+				2D4FA7812E2FF877000C4176 /* FirebaseAuthCombine-Community */,
 			);
 			productName = Doggo;
 			productReference = 2D6A28F92E26BDA600EC9B67 /* Doggo.app */;
@@ -629,6 +632,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2D4FA7812E2FF877000C4176 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D5AEF002E2ED80600CF634E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
 		2D5AEF212E2EE52200CF634E /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2D5AEF002E2ED80600CF634E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

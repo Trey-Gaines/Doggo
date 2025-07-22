@@ -102,14 +102,6 @@ struct Random: View {
     
     
     
-    //    func cleanSave() async {
-    //        if let dog = observe.currentDog {
-    //            modelContext.insert(dog)
-    //        }; observe.currentDog = nil
-    //    }
-    //
-    //    func cleanRelease() { observe.currentDog = nil  }
-    
     func fetch() async { await observe.fetchCat() }
 }
 
