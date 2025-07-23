@@ -44,9 +44,13 @@ struct CatApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(observe)
-                .preferredColorScheme(observe.preferredStyle)
+            if !observe.signedIn {
+                SignIn(observe: observe)
+            } else {
+                ContentView()
+                    .environment(observe)
+                    .preferredColorScheme(observe.preferredStyle)
+            }
         }.modelContainer(sharedModelContainer)
     }
 }

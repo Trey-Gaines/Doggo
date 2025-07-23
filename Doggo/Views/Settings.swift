@@ -11,16 +11,9 @@ struct Settings: View {
     @Bindable var observe: Observe
     @Environment(\.modelContext) var modelContext
     @Query(sort: \Cat.adopted) var cats: [Cat]
-    @State var signedIn: Bool = false
-    @State var showSheet: Bool = false
-    
     
     var body: some View {
         NavigationStack {
-            if signedIn {
-                Text("SignedIN")
-            }
-            
             List {
                 Section(header: Text("Appearance")) {
                     if observe.isDarkModeEnabled {
@@ -31,14 +24,14 @@ struct Settings: View {
                 }
                 
                 Section(header: Text("Data")) {
-                    Button {
-                        showSheet = true
+                    Button(role: .destructive) {
+                        observe.signedIn = false
                     } label: {
                         HStack {
                             Image(systemName: "person")
-                            Text("Sign In")
+                            Text("Sign Out of \(observe.signedInEmail)")
                         }
-                    }.disabled(signedIn)
+                    }.disabled(!observe.signedIn)
                     
                     Button(role: .destructive) {
                         do {
@@ -55,7 +48,6 @@ struct Settings: View {
             .navigationTitle(Text("Settings"))
             .navigationBarTitleDisplayMode(.inline)
         }
-        .sheet(isPresented: $showSheet) { SignIn() }
     }
 }
 
@@ -64,42 +56,4 @@ struct Settings: View {
         .modelContainer(for: Cat.self, inMemory: true)
 }
 
-struct SignIn: View {
-    @State var username: String = ""
-    @State var password: String = ""
-    
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 25).fill(Color.green)
-                .ignoresSafeArea()
-            VStack {
-                Text("Enter your credentials")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                HStack {
-                    TextField("Username", text: $username)
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 50).fill(Color.white))
-                    
-                }.padding(.horizontal, 20)
-                
-                HStack {
-                    SecureField("Password", text: $password)
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 50).fill(Color.white))
-                }.padding(.horizontal, 20)
-                
-                Button {
-                    
-                } label: {
-                    Text("Sign In")
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 25).fill(Color.blue))
-                }.padding()
-            }
-        }
-    }
-}
+
