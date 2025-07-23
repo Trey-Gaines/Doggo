@@ -11,12 +11,12 @@
 		2D5AEE7F2E2CF3C600CF634E /* Sim1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7C2E2CF3C600CF634E /* Sim1.png */; };
 		2D5AEE802E2CF3C600CF634E /* Sim2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7D2E2CF3C600CF634E /* Sim2.png */; };
 		2D5AEE812E2CF3C600CF634E /* Sim3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEE7E2E2CF3C600CF634E /* Sim3.png */; };
-		2D5AEEA62E2D9AA600CF634E /* Sim6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEEA42E2D9AA600CF634E /* Sim6.png */; };
 		2D5AEEA72E2D9AA600CF634E /* Sim4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEEA22E2D9AA600CF634E /* Sim4.png */; };
-		2D5AEEC72E2D9B9300CF634E /* Sim5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AEEC62E2D9B9300CF634E /* Sim5.png */; };
 		2D5AEF222E2EE52200CF634E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2D5AEF212E2EE52200CF634E /* FirebaseAuth */; };
 		2D5AEF242E2EE52200CF634E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2D5AEF232E2EE52200CF634E /* FirebaseCore */; };
 		2D5AEF262E2EE52200CF634E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2D5AEF252E2EE52200CF634E /* FirebaseDatabase */; };
+		2D819C842E311009001AB7B6 /* Sim5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D819C832E311009001AB7B6 /* Sim5.png */; };
+		2D819C862E311037001AB7B6 /* Sim6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D819C852E311037001AB7B6 /* Sim6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +41,11 @@
 		2D5AEE7D2E2CF3C600CF634E /* Sim2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim2.png; sourceTree = "<group>"; };
 		2D5AEE7E2E2CF3C600CF634E /* Sim3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim3.png; sourceTree = "<group>"; };
 		2D5AEEA22E2D9AA600CF634E /* Sim4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim4.png; sourceTree = "<group>"; };
-		2D5AEEA42E2D9AA600CF634E /* Sim6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim6.png; sourceTree = "<group>"; };
-		2D5AEEC62E2D9B9300CF634E /* Sim5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim5.png; sourceTree = "<group>"; };
 		2D6A28F92E26BDA600EC9B67 /* Doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6A29072E26BDA700EC9B67 /* DoggoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6A29112E26BDA700EC9B67 /* DoggoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D819C832E311009001AB7B6 /* Sim5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim5.png; sourceTree = "<group>"; };
+		2D819C852E311037001AB7B6 /* Sim6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sim6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -94,8 +94,8 @@
 				2D5AEE7D2E2CF3C600CF634E /* Sim2.png */,
 				2D5AEE7E2E2CF3C600CF634E /* Sim3.png */,
 				2D5AEEA22E2D9AA600CF634E /* Sim4.png */,
-				2D5AEEA42E2D9AA600CF634E /* Sim6.png */,
-				2D5AEEC62E2D9B9300CF634E /* Sim5.png */,
+				2D819C832E311009001AB7B6 /* Sim5.png */,
+				2D819C852E311037001AB7B6 /* Sim6.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,9 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5AEE7F2E2CF3C600CF634E /* Sim1.png in Resources */,
+				2D819C862E311037001AB7B6 /* Sim6.png in Resources */,
 				2D5AEE802E2CF3C600CF634E /* Sim2.png in Resources */,
-				2D5AEEA62E2D9AA600CF634E /* Sim6.png in Resources */,
-				2D5AEEC72E2D9B9300CF634E /* Sim5.png in Resources */,
+				2D819C842E311009001AB7B6 /* Sim5.png in Resources */,
 				2D5AEEA72E2D9AA600CF634E /* Sim4.png in Resources */,
 				2D5AEE812E2CF3C600CF634E /* Sim3.png in Resources */,
 			);
