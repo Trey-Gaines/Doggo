@@ -1,4 +1,4 @@
-# Assignment 9
+# Project images
 
 <p align="center">
   <img src="https://github.com/Trey-Gaines/MyCats/raw/main/Sim1.png" width="30%" />
